@@ -16,7 +16,6 @@ class CreateArticlesTable extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->integer('code');
             $table->string('description',50);
             $table->float('price');
         });

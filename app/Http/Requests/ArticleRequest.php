@@ -32,8 +32,7 @@ class ArticleRequest extends FormRequest
             case 'POST':
             {
                 return [
-                   'code'=>'required|unique:articles',
-                   'price'=>'min:1',
+                   'price'=>'required|min:1',
                    'description'=>'min:5'
                ];
             }
@@ -41,8 +40,7 @@ class ArticleRequest extends FormRequest
             case 'PUT':
             {
                 return [
-                   'code'=>'required|unique:articles',
-                   'price'=>'min:1',
+                   'price'=>'required|min:1',
                    'description'=>'min:5'
                 ];
             }
@@ -60,7 +58,7 @@ class ArticleRequest extends FormRequest
     public function attributes()
     {
       return [
-            'code' => 'código'  
+            'price' => 'precio'  
       ];
     }
 }
