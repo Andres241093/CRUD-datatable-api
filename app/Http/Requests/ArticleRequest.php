@@ -58,7 +58,8 @@ class ArticleRequest extends FormRequest
     public function attributes()
     {
       return [
-            'price' => 'precio'  
+            'price' => 'precio',
+            'description' => 'descripción'  
       ];
     }
 }
